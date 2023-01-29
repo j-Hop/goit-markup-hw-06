@@ -482,7 +482,6 @@ position: absolute;
 top: 50%;
 left: 50%;
 width: 408px;
-min-height: 576px;
 padding: 72px 24px 24px 24px;
 background-color: #FCFCFC;
 border-radius: 4px;
@@ -507,7 +506,8 @@ transition: transform var(--transition-duration) var(--transition-timing-functio
   transition:background-color var(--transition-duration) var(--transition-timing-function) ;
 }
 
-.modal-close:hover{
+.modal-close:hover,
+.modal-close:focus{
   background-color:var(--sixth-color);
   fill:var(--third-color) ;
 }
@@ -575,6 +575,10 @@ margin-bottom: 14px;
   fill: var(--fourth-color);
 }
 
+.modal-textarea{
+  margin-bottom: 16px;
+}
+
 .modal-form{
 font-weight: 400;
 font-size: 12px;
@@ -619,7 +623,7 @@ height: 12px;
 }
 
 .modal-wrap{
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .modal-text{
